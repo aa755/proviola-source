@@ -1,29 +1,19 @@
-body {
-  margin: 0px;
-  padding: 0px;
-}
+/* http://stackoverflow.com/a/4614348/391753 */
 
-div.commands {
-  margin: 0px;
-  padding: 0px;
-  width: 50%;
-/* border-right: 1px solid #777; */
+body{
+  overflow:hidden; /* This will remove the default scroll, not really needed, safer nonetheless */
+}
+.commands, .goal{
+  overflow:auto; /* This will add a scroll when required */
+  width:50%;
+  float:left;
+  height: 100%
 }
 
 span.command:hover {
   background-color: #ccc;
 }
 
-div.goal {
-  position: fixed;
-  left: 50%;
-  bottom: 0px;
-  width: 50%;
-  margin: 0px;
-  padding-top: 100%;
-  border-left: 1px solid #777;
-  background-color: #fff;
-}
 
 div.hidden {
   display: none;
